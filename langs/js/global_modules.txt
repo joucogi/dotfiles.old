@@ -1,0 +1,3 @@
+@angular
+expo-cli
+react-native-cli
