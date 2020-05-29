@@ -2,6 +2,10 @@ function cdd() {
   cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
 }
 
+function cdw() {
+  cd /Volumes/MACBOOK_EXT/Users/joelcollcosta/Efimatica
+}
+
 function j() {
   fname=$(declare -f -F _z)
 

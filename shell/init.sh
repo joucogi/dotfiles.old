@@ -1,6 +1,8 @@
 # This is a useful file to have the same aliases/functions in bash and zsh
-ulimit -n 200000
-ulimit -u 2048
+#ulimit -n 200000
+#ulimit -u 2048
+ulimit -n 10000
+ulimit -u 709
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
