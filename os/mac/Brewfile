@@ -3,6 +3,7 @@ tap "dart-lang/dart"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+brew "exa"
 brew "fzf"
 brew "git-flow", link: false
 brew "git-flow-avh"

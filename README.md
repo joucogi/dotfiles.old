@@ -28,3 +28,30 @@ Using wget
 ```bash
 wget -O - https://raw.githubusercontent.com/CodelyTV/dotly/master/installer | bash
 ```
+
+## Commands to export programs
+### brew
+`brew bundle dump --file="$HOMEBREW_BUNDLE_FILE_PATH" --force`
+
+### apt
+`apt list --installed > apt-installed.txt`
+
+### pip
+`pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"`
+
+### npm
+`ls -1 /usr/local/lib/node_modules | grep -v npm >"$DOTFILES_PATH/langs/js/global_modules.txt"`
+
+### composer
+`Make a symlink to ~/.composer/composer.json`
+
+## Commands to import programs
+### brew
+`brew services stop --all`
+`brew bundle --file="$HOMEBREW_BUNDLE_FILE_PATH" --force`
+
+### pip
+`pip install -r "$DOTFILES_PATH/langs/python/requirements.txt"`
+
+### npm
+`xargs -I_ npm install -g "_" < "$DOTFILES_PATH/langs/js/global_modules.txt"`
