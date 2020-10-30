@@ -6,6 +6,7 @@
 [core]
         editor = vim
 	excludesfile = /Users/joelcollcosta/.gitignore_global
+	whitespace = cr-at-eol
 	autocrlf = input
 [merge]
         tool = vimdiff
