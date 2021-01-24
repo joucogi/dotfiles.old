@@ -10,3 +10,5 @@
 
 - link:
     ~/.dotly: os/mac/.dotly
+    ~/.config/karabiner: os/mac/karabiner-elements
+    ~/.config/karabiner.edn: os/mac/karabiner-goku/karabiner.edn
