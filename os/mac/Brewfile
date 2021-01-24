@@ -1,7 +1,11 @@
 tap "adoptopenjdk/openjdk"
+tap "candid82/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
+tap "weaveworks/tap"
+tap "yqrashawn/goku"
 brew "exa"
 brew "fzf"
 brew "git-flow", link: false
@@ -11,17 +15,22 @@ brew "mas"
 brew "minikube"
 brew "navi"
 brew "node"
+brew "php", link: false
+brew "php@7.4", link: true
+brew "rabbitmq-c"
 brew "sbt"
 brew "tldr"
 brew "watchman"
 brew "yarn"
+brew "weaveworks/tap/eksctl"
+brew "yqrashawn/goku/goku"
 cask "adoptopenjdk"
 cask "adoptopenjdk8"
-cask "java"
+cask "karabiner-elements"
 mas "Bitwarden", id: 1352778147
 mas "iHosts", id: 1102004240
-mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
 mas "Slack", id: 803453959
 mas "Telegram Lite", id: 946399090
 mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835

@@ -10,3 +10,10 @@
 * Install git submodules `git submodule update --init --recursive`
 * Install your dotfiles `$HOME/.dotfiles/modules/dotly/bin/dot self install`
 
+## Commands to export installed applications
+
+Run `export_apps`
+
+## Commands to import applications
+
+Run `import_apps`
