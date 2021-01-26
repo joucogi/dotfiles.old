@@ -182,7 +182,7 @@
         "description" : "Close Workspace",
         "manipulators" : [ {
           "from" : {
-            "key_code" : "o",
+            "key_code" : "c",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control", "left_option" ]
             }

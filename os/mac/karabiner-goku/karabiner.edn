@@ -34,7 +34,7 @@
     "open -a 'Microsoft Teams.app'"
     "open -a 'Microsoft Outlook.app'"
     ]]]}
-  {:des "Close Workspace" :rules [[:!CTOo [
+  {:des "Close Workspace" :rules [[:!CTOc [
     "pkill -x 'iTerm2'"
     "pkill -x 'Google Chrome'"
     "pkill -x 'MySQLWorkbench'"
