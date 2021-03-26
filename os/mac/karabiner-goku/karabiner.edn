@@ -23,15 +23,20 @@
     end tell
   '"
   :open "open -a '%s.app'"
-  :close "pkill -x '%s.app'"
+  :close "pkill -x '%s'"
 }
 :simlayers {:open-mode {:key :o}
             :emoji-mode {:key :e}}
 
  :main
  [;; ------------ Remaps ------------
-{:des   "[mouse] Up key -> Restore last hidden" :rules [[{:pkey :button5} :!Ctab]]}
-  {:des   "[mouse] Down key -> Hide" :rules [[{:pkey :button4} [{:pkey :button1} :!Ch]]]}
+  ;;{:des   "[mouse] Up key -> Restore last hidden" :rules [[{:pkey :button5} :!Ctab]]}
+  ;;{:des   "[mouse] Down key -> Hide" :rules [[{:pkey :button4} [{:pkey :button1} :!Ch]]]}
+  {:des   "[mouse] Move to another desktop" :rules [
+    [{:pkey :button4} :!Tright_arrow]
+    [{:pkey :button5} :!Tleft_arrow]
+  ]}
+  ;;{:des   "[mouse] Move to next desktop" :rules [[{:pkey :button5} [:!Tright_arrow]]]}
   {:des   "Caps Lock to Fn" :rules [[{:key :caps_lock} {:key :fn}]]}
   {:des   "Fn + I/J/K/L to Arrow Keys" :rules [
     [:!Fi {:key :up_arrow}]
@@ -39,28 +44,27 @@
     [:!Fk {:key :down_arrow}]
     [:!Fl {:key :right_arrow}]
   ]}
-  
  ;; ------------ Launchers ------------
   {:des "Open iTerm" :rules [[:!CTOspacebar [:open "iTerm"]]]}
   {:des "Open Browser Chrome" :rules [[:!CTOb [:open "Google Chrome"]]]}
   {:des "Open IntelliJ IDEA" :rules [[:!CTOi [:open "IntelliJ IDEA"]]]}
   {:des "Open Visual Code" :rules [[:!CTOv [:open "Visual Studio Code"]]]}
   {:des "Open Workspace" :rules [[:!CTOo [
-    :open "iTerm"
-    :open "IntelliJ IDEA"
-    :open "Google Chrome"
-    :open "MySQLWorkbench"
-    :open "Skype"
-    :open "Microsoft Teams"
-    :open "Microsoft Outlook"
+    [:open "iTerm"]
+    [:open "IntelliJ IDEA"]
+    [:open "Google Chrome"]
+    [:open "MySQLWorkbench"]
+    [:open "Skype"]
+    [:open "Microsoft Teams"]
+    [:open "Microsoft Outlook"]
     ]]]}
   {:des "Close Workspace" :rules [[:!CTOc [
-    :close "iTerm2"
-    :close "Google Chrome"
-    :close "MySQLWorkbench"
-    :close "Skype"
-    :close "Teams"
-    :close "Microsoft Outlook"
+    [:close "iTerm2"]
+    [:close "Google Chrome"]
+    [:close "MySQLWorkbench"]
+    [:close "Skype"]
+    [:close "Teams"]
+    [:close "Microsoft Outlook"]
     ]]]}
   {:des "Open mode"
     :rules [:open-mode
@@ -70,9 +74,10 @@
   {:des "Emoji mode"
     :rules [:emoji-mode
       [:v [:paste "✅"]]
-      [:t [:paste "👍🏻"]]
-      [:d [:paste "👎🏻"]]
+      [:t [:paste "👍"]]
+      [:d [:paste "👎"]]
       [:l [:paste "😂"]]
+      [:f [:paste "🤦🏻‍♂️"]]
       [:a [:paste "😡"]]
       [:r [:paste "🚀"]]
       [:g [:paste "😬"]]
