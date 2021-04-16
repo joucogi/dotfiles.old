@@ -174,30 +174,6 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "Close Workspace",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "c",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "pkill -x 'iTerm2'"
-          }, {
-            "shell_command" : "pkill -x 'Google Chrome'"
-          }, {
-            "shell_command" : "pkill -x 'MySQLWorkbench'"
-          }, {
-            "shell_command" : "pkill -x 'Skype'"
-          }, {
-            "shell_command" : "pkill -x 'Teams'"
-          }, {
-            "shell_command" : "pkill -x 'Microsoft Outlook'"
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
         "description" : "Open mode",
         "manipulators" : [ {
           "from" : {

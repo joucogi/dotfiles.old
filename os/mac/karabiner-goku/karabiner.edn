@@ -23,7 +23,6 @@
     end tell
   '"
   :open "open -a '%s.app'"
-  :close "pkill -x '%s'"
 }
 :simlayers {:open-mode {:key :o}
             :emoji-mode {:key :e}}
@@ -57,14 +56,6 @@
     [:open "Skype"]
     [:open "Microsoft Teams"]
     [:open "Microsoft Outlook"]
-    ]]]}
-  {:des "Close Workspace" :rules [[:!CTOc [
-    [:close "iTerm2"]
-    [:close "Google Chrome"]
-    [:close "MySQLWorkbench"]
-    [:close "Skype"]
-    [:close "Teams"]
-    [:close "Microsoft Outlook"]
     ]]]}
   {:des "Open mode"
     :rules [:open-mode
