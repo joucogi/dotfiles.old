@@ -52,3 +52,7 @@ brew "yqrashawn/goku/goku"
 cask "adoptopenjdk"
 cask "adoptopenjdk8"
 cask "karabiner-elements"
+mas "Bitwarden", id: 1352778147
+mas "Telegram", id: 747648890
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
