@@ -31,7 +31,7 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt add" />
   </action>
   <action id="SelectInProjectView">
-    <keyboard-shortcut first-keystroke="shift ctrl meta alt l" />
+    <keyboard-shortcut first-keystroke="ctrl meta alt l" />
   </action>
   <action id="ShowUsages">
     <keyboard-shortcut first-keystroke="meta alt f7" />
