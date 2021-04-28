@@ -18,7 +18,7 @@ brew "gd"
 brew "gdbm"
 brew "git"
 brew "git-delta"
-brew "git-flow", link: false
+brew "git-flow"
 brew "gnu-getopt"
 brew "git-flow-avh", link: false
 brew "libffi"
@@ -27,7 +27,6 @@ brew "gnu-sed"
 brew "go"
 brew "grex"
 brew "hyperfine"
-brew "icu4c"
 brew "krb5"
 brew "kubernetes-cli"
 brew "libpq"
@@ -38,8 +37,8 @@ brew "mockery"
 brew "navi"
 brew "node"
 brew "openjdk"
-brew "php", link: false
-brew "php@7.4", link: true
+brew "php"
+brew "php@7.4"
 brew "rabbitmq-c"
 brew "sbt"
 brew "tcl-tk"
@@ -53,6 +52,7 @@ cask "adoptopenjdk"
 cask "adoptopenjdk8"
 cask "karabiner-elements"
 mas "Bitwarden", id: 1352778147
+mas "iHosts", id: 1102004240
 mas "Telegram", id: 747648890
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
