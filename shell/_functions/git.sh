@@ -10,10 +10,6 @@ function gffs() {
     git flow feature start $branch_name
 }
 
-function testString() {
-    str="vsv/Lx+nNW5+0vg9E/"
-    echo ${str//[\/+]/""}
-}
 function gfff() {
     tag=$(get_actual_tag)
     git flow feature finish $tag
@@ -45,11 +41,10 @@ function get_actual_tag() {
 
 function get_new_tag() {
     today=$(date '+%Y%m%d')
-    version=1
+    version=0
     tag="${today}.${version}"
 
-    result=$(git_tag_exists $tag)
-
+    result=true
     while $result
     do
         ((version=version + 1))
