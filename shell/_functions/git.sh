@@ -42,7 +42,6 @@ function get_actual_tag() {
 function get_new_tag() {
     today=$(date '+%Y%m%d')
     version=0
-    tag="${today}.${version}"
 
     result=true
     while $result
