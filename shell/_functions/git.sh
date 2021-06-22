@@ -1,7 +1,7 @@
 function gffs() {
     if [[ $# -gt 0 ]]
     then
-        branch_name=$(1)
+        branch_name=${1}
     else
         branch_name=$(openssl rand -base64 12)
         branch_name=${branch_name//[\/+]/""}
